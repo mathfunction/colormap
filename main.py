@@ -15,9 +15,11 @@ class ColorMap:
 			if os.name == 'nt':
 				self.cxx = ctypes.cdll.LoadLibrary("./colormap.dll") # 如果作業系統 = windows
 			else:
+				#================================================================================================
 				# 這邊是 python3 setup.py build 編譯後自動產生的資料夾名 , 需要手動改 !!
 				env = "lib.macosx-10.13-x86_64-3.7" 
 				self.cxx = ctypes.cdll.LoadLibrary("./build/{}/colormap.cpython-37m-darwin.so".format(env))
+				#===============================================================================================
 			#  ColorMapNew() 宣告物件 !!
 			self.colormap_model = self.cxx.ColorMapNew()
 			#  ColorMapAssign() 宣告輸出 pointer 型別
