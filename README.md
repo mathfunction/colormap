@@ -110,7 +110,7 @@
 
 ### 執行 ColorMap 範例 cube.jpg 結果
 
-![](C:\Users\Tommy_Cheng\Desktop\gitcode\colormap\result.png)
+![](./result.png)
 
 
 
